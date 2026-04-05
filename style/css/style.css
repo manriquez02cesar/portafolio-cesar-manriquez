@@ -24,7 +24,7 @@ footer {
     /* Personalización de la Tarjeta */
 .card-custom {
     border: none;
-    background-color: #ffffff; /* Puedes cambiar esto a #212529 para modo oscuro */
+    background-color: #ffffffe4; /* Puedes cambiar esto a #212529 para modo oscuro */
     border-radius: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);

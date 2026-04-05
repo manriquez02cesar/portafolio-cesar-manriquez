@@ -5,7 +5,6 @@ fondo.style.top = "0";
 fondo.style.left = "0";
 fondo.style.width = "100%";
 fondo.style.height = "100%";
-//fondo.style.background = "linear-gradient(135deg, #ff9351, #5adeff)";
 fondo.style.background = "linear-gradient(135deg, #b3ecff, #e7f1f4)";
 fondo.style.filter = "blur(80px)";
 fondo.style.zIndex = "-1";
