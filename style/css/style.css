@@ -23,11 +23,22 @@
         }
 
         /* NAVBAR ANIMATION (Líneas al pasar el cursor) */
+        .navbar-custom {
+            background-color: #0f172a;
+            border-bottom: 1px solid #1e293b;
+        }
+
         .navbar-nav .nav-link {
             position: relative;
             padding-bottom: 5px;
             margin: 0 5px;
             transition: color 0.3s ease;
+            color: #94a3b8;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #ffffff;
         }
 
         .navbar-nav .nav-link::after {
@@ -38,17 +49,11 @@
             display: block;
             margin-top: 2px;
             right: 0;
-            background: #ffffff; /* Color de la migaja de pan*/
-            transition: width 0.3s ease;
-            -webkit-transition: width 0.3s ease;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-            left: 0;
             background: #ffffff;
+            transition: width 0.3s ease;
         }
 
+        .navbar-nav .nav-link:hover::after,
         .navbar-nav .nav-link.active::after {
             width: 100%;
             left: 0;
@@ -170,4 +175,40 @@
             margin-top: 3rem;
             padding-top: 1.5rem;
             font-size: 0.75rem;
+        }
+        /* CONTENIDO PRINCIPAL */
+        main {
+            flex: 1 0 auto;
+            padding: 60px 0;
+        }
+
+        /* ESTILO DE CARDS */
+        .card-custom {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 100%;
+            border-top: 5px solid #0ea5e9;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        /* Barras de Progreso */
+        .progress {
+            height: 8px;
+            border-radius: 10px;
+            background-color: #e2e8f0;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-icon {
+            font-size: 1.5rem;
+            color: #0ea5e9;
+            margin-right: 15px;
         }
