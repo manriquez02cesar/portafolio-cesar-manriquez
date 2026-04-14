@@ -35,78 +35,70 @@
     </nav>
     <!-- CONTENIDO -->
     <main class="container">
-        <!-- FILA 1: Título -->
-        <div class="row justify-content-center text-center mb-5">
-            <div class="col-lg-8">
-                <h1 class="fw-bold display-4">¡Ven, Charlemos!</h1>
-                <p class="lead">Selecciona el medio que prefieras para contactarme.</p>
-            </div>
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-dark">¡Hablemos!</h1>
+            <p class="text-muted">Elige el canal que prefieras o envíame un mensaje directo.</p>
         </div>
 
-        <!-- FILA 2: Whatsapp y LinkedIn -->
-        <div class="row g-4 justify-content-center mb-4">
-            <div class="col-md-5 col-lg-4">
-                <a href="https://wa.me/5529414190" target="_blank" class="contact-link">
-                    <div class="card card-contact text-center">
-                        <div class="info-icon"><i class="bi bi-whatsapp"></i></div>
-                        <h4 class="fw-bold mb-1">WhatsApp</h4>
-                        <p class="text-muted mb-0">Hablemos ahora mismo</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-5 col-lg-4">
-                <a href="https://www.linkedin.com/in/cesar-man02/" target="_blank" class="contact-link">
-                    <div class="card card-contact text-center">
-                        <div class="info-icon"><i class="bi bi-linkedin"></i></div>
-                        <h4 class="fw-bold mb-1">LinkedIn</h4>
-                        <p class="text-muted mb-0">Perfil Profesional</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!-- FILA 3: GitHub y Email -->
         <div class="row g-4 justify-content-center mb-5">
-            <div class="col-md-5 col-lg-4">
-                <a href="https://github.com/manriquez02cesar" target="_blank" class="contact-link">
-                    <div class="card card-contact text-center">
-                        <div class="info-icon"><i class="bi bi-github"></i></div>
-                        <h4 class="fw-bold mb-1">GitHub</h4>
-                        <p class="text-muted mb-0">Explora mi código</p>
+            <div class="col-6 col-md-3">
+                <a href="https://wa.me/tu-numero" target="_blank" class="contact-link">
+                    <div class="card-contact text-center">
+                        <i class="bi bi-whatsapp info-icon"></i>
+                        <h6 class="fw-bold mb-0">WhatsApp</h6>
                     </div>
                 </a>
             </div>
-            <div class="col-md-5 col-lg-4">
-                <div class="card card-contact text-center">
-                    <div class="info-icon"><i class="bi bi-envelope-at"></i></div>
-                    <h4 class="fw-bold mb-1">Email</h4>
-                    <p class="text-muted mb-0">manriquez02cesar@gmail.com</p>
-                </div>
+            <div class="col-6 col-md-3">
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contact-link">
+                    <div class="card-contact text-center">
+                        <i class="bi bi-linkedin info-icon"></i>
+                        <h6 class="fw-bold mb-0">LinkedIn</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="https://github.com/tu-usuario" target="_blank" class="contact-link">
+                    <div class="card-contact text-center">
+                        <i class="bi bi-github info-icon"></i>
+                        <h6 class="fw-bold mb-0">GitHub</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="mailto:tu@correo.com" class="contact-link">
+                    <div class="card-contact text-center">
+                        <i class="bi bi-envelope-at info-icon"></i>
+                        <h6 class="fw-bold mb-0">Email</h6>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <!-- FILA 4: Formulario -->
         <div class="row justify-content-center">
-            <div class="col-lg-10 col-xl-8">
+            <div class="col-lg-8">
                 <div class="form-card">
-                    <h2 class="fw-bold mb-4 text-center">Mensaje Directo</h2>
+                    <h3 class="fw-bold mb-4">Enviar un mensaje</h3>
                     <form id="contactForm" action="https://formspree.io/f/xeevqbev" method="POST">
-                        <div class="row g-4">
+                        <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label small fw-bold text-muted uppercase">Nombre Completo</label>
-                                <input type="text" name="name" class="form-control" placeholder="Juan Pérez" required>
+                                <label class="form-label text-muted small fw-bold">Nombre</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Juan Pérez" required>
+                                <div class="invalid-feedback">El nombre no puede contener números.</div>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label small fw-bold text-muted uppercase">Correo Electrónico</label>
-                                <input type="email" name="email" class="form-control" placeholder="juan@ejemplo.com" required>
+                                <label class="form-label text-muted small fw-bold">Email</label>
+                                <input type="email" id="email" name="_replyto" class="form-control" placeholder="juan@ejemplo.com" required>
+                                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
                             </div>
                             <div class="col-12">
-                                <label class="form-label small fw-bold text-muted uppercase">Mensaje detallado</label>
-                                <textarea name="message" class="form-control" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                                <label class="form-label text-muted small fw-bold">Mensaje</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                                <div class="invalid-feedback">El mensaje debe tener al menos 3 palabras.</div>
                             </div>
-                            <div class="col-12 mt-5">
-                                <button type="submit" class="btn btn-submit w-100 shadow">
-                                    ENVIAR MENSAJE <i class="bi bi-send-fill ms-2"></i>
+                            <div class="col-12 mt-4">
+                                <button type="submit" id="submitBtn" class="btn btn-submit w-100 shadow-sm" disabled>
+                                    ENVIAR AHORA <i class="bi bi-send ms-2"></i>
                                 </button>
                             </div>
                         </div>
@@ -161,6 +153,7 @@
     </footer>
      <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../style/script/scriptContact.js"></script>
     <script src="../style/script/scriptBody.js"></script>
     
 </body>

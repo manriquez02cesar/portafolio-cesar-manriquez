@@ -142,70 +142,80 @@
         /* CONTENIDO PRINCIPAL */
         main {
             flex: 1 0 auto;
-            padding: 80px 0; 
+            padding: 60px 0;
         }
 
-        /* ESTILO DE LAS CARDS DE CONTACTO - CORREGIDO */
         .contact-link {
             text-decoration: none;
             color: inherit;
             display: block;
-            height: 100%;
         }
 
         .card-contact {
             border: none;
-            background-color: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 1.5rem;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border-top: 5px solid #0ea5e9;
-            padding: 2rem;
-            min-width: 250px; /* Evita que se colapsen lateralmente */
-            width: 100%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 4px solid #0ea5e9;
+            height: 100%;
         }
 
         .card-contact:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
         }
 
         .info-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #0ea5e9;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
         }
 
-        /* DISEÑO DEL FORMULARIO */
+        /* Estilo del Formulario */
         .form-card {
             background-color: #ffffff;
-            color: #1e293b;
-            border-radius: 24px;
-            padding: 3rem;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-            margin-top: 2rem;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .form-control {
-            border-radius: 12px;
-            padding: 14px 18px;
+            border-radius: 10px;
+            padding: 12px;
             border: 1px solid #e2e8f0;
-            background-color: #f1f5f9;
+            background-color: #f8fafc;
+        }
+
+        .form-control.is-invalid {
+            border-color: #dc3545;
+            background-image: none;
+        }
+
+        .invalid-feedback {
+            font-size: 0.75rem;
+            font-weight: 600;
         }
 
         .btn-submit {
             background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
             border: none;
-            border-radius: 12px;
-            padding: 16px;
+            border-radius: 10px;
+            padding: 14px;
             font-weight: 700;
             color: white;
             transition: all 0.3s ease;
-            font-size: 1.1rem;
         }
 
-        .btn-submit:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+        .btn-submit:disabled {
+            background: #cbd5e1;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-submit:not(:disabled):hover {
+            transform: scale(1.02);
+            color: white;
         }
