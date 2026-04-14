@@ -1,0 +1,211 @@
+/* Configuración para Footer Pegajoso */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* NAVBAR ANIMATION (Líneas al pasar el cursor) */
+        .navbar-custom {
+            background-color: #0f172a;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            padding-bottom: 5px;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+            color: #94a3b8;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 2px;
+            right: 0;
+            background: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+            left: 0;
+        }
+        /* --- ESTILOS DEL FOOTER --- */
+        .main-footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            flex-shrink: 0;
+        }
+
+        .footer-title {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .brand-text-footer {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .brand-dot { color: #0ea5e9; }
+
+        .nav-link-custom {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-link-custom:hover { color: #0ea5e9; }
+
+        .status-container {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #22c55e;/*green: 22c55e/ red: cb1616*/
+            border-radius: 50%;
+            margin-right: 10px;
+            position: relative;
+            box-shadow: 0 0 8px #22c55e;/*green: 22c55e/ red: cb1616*/
+        }
+
+        .status-dot::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #22c55e;/*green: 22c55e/ red: cb1616*/
+            border-radius: 50%;
+            animation: pulse-animation 1s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+
+        .social-link-footer {
+            color: #94a3b8;
+            font-size: 1.5rem;
+            margin-right: 1.2rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-link-footer:hover {
+            color: #0ea5e9;
+            transform: translateY(-3px);
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.875rem;
+            border-left: 2px solid #6c7f99;
+            padding-left: 1rem;
+            margin-top: 1rem;
+        }
+
+        .copyright-bar {
+            border-top: 1px solid #1e293b;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            font-size: 0.75rem;
+        }
+        /* CONTENIDO PRINCIPAL */
+        main {
+            flex: 1 0 auto;
+            padding: 80px 0; 
+        }
+
+        /* ESTILO DE LAS CARDS DE CONTACTO - CORREGIDO */
+        .contact-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .card-contact {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid #0ea5e9;
+            padding: 2rem;
+            min-width: 250px; /* Evita que se colapsen lateralmente */
+            width: 100%;
+        }
+
+        .card-contact:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .info-icon {
+            font-size: 3rem;
+            color: #0ea5e9;
+            margin-bottom: 1.2rem;
+        }
+
+        /* DISEÑO DEL FORMULARIO */
+        .form-card {
+            background-color: #ffffff;
+            color: #1e293b;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            margin-top: 2rem;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            padding: 14px 18px;
+            border: 1px solid #e2e8f0;
+            background-color: #f1f5f9;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            border: none;
+            border-radius: 12px;
+            padding: 16px;
+            font-weight: 700;
+            color: white;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+        }
