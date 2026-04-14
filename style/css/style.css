@@ -176,12 +176,6 @@
             padding-top: 1.5rem;
             font-size: 0.75rem;
         }
-        /* CONTENIDO PRINCIPAL */
-        main {
-            flex: 1 0 auto;
-            padding: 60px 0;
-        }
-
         /* ESTILO DE CARDS */
         .card-custom {
             border: none;
@@ -212,3 +206,4 @@
             color: #0ea5e9;
             margin-right: 15px;
         }
+        /* PROYECTOS */
