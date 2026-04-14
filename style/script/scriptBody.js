@@ -10,3 +10,10 @@ fondo.style.filter = "blur(80px)";
 fondo.style.zIndex = "-1";
 
 document.body.appendChild(fondo);
+
+document.querySelectorAll(".flip-card").forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("active");
+    });
+});
+
