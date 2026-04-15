@@ -16,4 +16,3 @@ document.querySelectorAll(".flip-card").forEach(card => {
         card.classList.toggle("active");
     });
 });
-
