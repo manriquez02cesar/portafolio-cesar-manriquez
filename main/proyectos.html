@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesar Manríquez - Proyectos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="../style/css/styleMente.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">    <link href="../style/css/style.css" rel="stylesheet"/>
 
 </head>
@@ -30,97 +29,184 @@
     </nav>
     <!-- CONTENIDO -->
     <main>
-  <div class="container">
-    <div class="row g-4 justify-content-center">
-      <div class="text-center mb-5">
-        <h1 class="fw-bold display-4">Mis Proyectos</h1>
-        <p class="lead">Algunos de los desarrollos en los que he trabajado recientemente</p>
-      </div>
-
-      <!-- CARD 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-
-            <!-- FRONT -->
-            <div class="flip-card-front card-custom">
-              <img src="../componentes/img/GF.png" class="img-fluid card-img-top w-50 d-block mx-auto" alt="Proyecto 1">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-semibold mb-4 text-dark text-center">APLICACIÓN E-COMMERCE</h5>
-              </div>
+    <div class="container pb-3">
+        <!-- FILA 1: Encabezado -->
+            <div class="section-header text-center">
+                <h1 class="fw-bold display-4">Mis Proyectos</h1>
+                <p class="lead">Algunos de los desarrollos en los que he trabajado recientemente.</p>
             </div>
 
-            <!-- BACK -->
-            <div class="flip-card-back card-custom">
-              <div class="card-body text-center d-flex flex-column justify-content-center">
-                <h5 class="card-title fw-semibold mb-4 text-dark text-center">E-COMMERCE | GENERATION MEXICO</h5>
-                <p>
-                  Actualmente desarrollo una aplicación E-commerce enfocada en la venta de ropa, implementando una interfaz moderna y adaptable mediante HTML, CSS, JavaScript y Bootstrap, 
-                  garantizando una experiencia de usuario óptima en dispositivos móviles, tabletas y escritorio.
-                  Como siguiente fase, se contempla la integración de un backend basado en Java con Spring Boot.
-                </p>
-              </div>
+        <div class="row g-4 justify-content-center pt-4 pb-5">
+            
+            <!-- Proyecto 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="img-wrapper">
+                        <img src="../componentes/img/GF.png" alt="Proyecto Backend" class="project-img">
+                    </div>
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">APLICACIÓN E-COMMERCE</h5>
+                        <p class="text-muted small mb-4">Desarrollo integral de una plataforma e-commerce con un ciclo de ejecución de 12 semanas. 
+                            El proyecto abarca el diseño y la implementación full-stack incluyendo una experiencia de usuario (UX).
+                        </p>
+                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                            Ver detalles <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="img-wrapper">
+                        <!-- Imagen de ejemplo para AT&T -->
+                        <img src="../componentes/img/Calle_Libre.jpeg" alt="Proyecto AT&T" class="project-img">
+                    </div>
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">LANDING PAGE</h5>
+                        <p class="text-muted small mb-4">Diseñé y programé la interfaz de usuario de una aplicación web para app-store deportiva utilizando Bootstrap y JavaScript en solo 12 horas.</p>
+                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                            Ver detalles <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="img-wrapper p-3">
+                        <img src="../componentes/img/att.png" alt="Proyecto Code" class="project-img">
+                    </div>
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">AT&T COMUNICACIONES DIGITALES</h5>
+                        <p class="text-muted small mb-4"> Automatizacé el resguardo y gestioné documentos físicos y digitales. </p>
+                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                            Ver detalles <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-
-            <div class="flip-card-front card-custom">
-              <img src="../componentes/img/Calle_Libre.jpeg" class="img-fluid card-img-top" alt="Proyecto 2">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-semibold mb-4 text-dark text-center">LANDING PAGE</h5>
-              </div>
-            </div>
-
-            <div class="flip-card-back card-custom">
-              <div class="card-body text-center d-flex flex-column justify-content-center">
-                <h5 class="card-title fw-semibold mb-4 text-dark text-center">HACKATHON | LANDING PAGE</h5>
-                <p>
-                  Colaboré en equipo de manera ágil una landing page responsive usando las herramientas de Frontend HTML, CSS, JS y Bootstrap optimizada en un tiempo de 24 horas.
-                  Esta pagina tuvo como objetivo aplicar nuestros conocimientos de estilo sin usar nada de backend.
-                </p>
-                <a href="https://cnastienka.github.io/Calle-Libre/">Conoce a Calle Libre</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-
-            <div class="flip-card-front card-custom">
-              <img src="../componentes/img/at&t.png" class="img-fluid card-img-top d-block mx-auto" alt="Proyecto 3">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-semibold mb-4 text-dark text-center">AT&T COMUNICACIONES DIGITALES</h5>
-              </div>
-            </div>
-
-            <div class="flip-card-back card-custom">
-              <div class="card-body text-center d-flex flex-column justify-content-center">
-                <h5 class="card-title fw-semibold mb-4 text-dark text-center">BECARIO | AT&T COMUNICACIONES DIGITALES</h5>
-                <p>
-                  Analicé el flujo operativo del área e identifiqué oportunidades de mejora en el proceso de resguardo de documentos, proponiendo e implementando una solución de automatización 
-                  que optimiza la organización y localización de la información.
-                  Diseñé la estructura de datos en Oracle SQL, permitiendo la clasificación eficiente de documentos según su tipo y facilitando su trazabilidad dentro del sistema.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</main>
 
+    <!-- MODAL 1 -->
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">DESARROLLADOR BACKEND Jr.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 mb-3 mb-md-0 text-center">
+                            <img src="../componentes/img/GridFlex.png" class="modal-project-img shadow-sm" alt="Detalle">
+                        </div>
+                        <div class="col-md-7">
+                            <h6 class="fw-bold text-primary">SITIO WEB | E-COMMERCE</h6>
+                            <p class="text-secondary" style="font-size: 0.95rem;">
+                                Actualmente desarrollo una aplicación E-commerce enfocada en la venta de ropa, implementando una interfaz moderna y adaptable mediante HTML, CSS, JavaScript y Bootstrap, 
+                                garantizando una experiencia de usuario óptima en dispositivos móviles, tabletas y escritorio.
+                                Como siguiente fase, se contempla la integración de un backend basado en Java con Spring Boot.
+                            </p>
+                            <h6 class="fw-bold mt-3">Tecnologías usadas:</h6>
+                            <div class="mt-2">
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Spring Boot</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light border-0">
+                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">DESARROLLADOR FRONTEND</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 mb-3 mb-md-0 text-center">
+                            <img src="../componentes/img/CalleLibre.png" class="modal-project-img" alt="Detalle AT&T">
+                        </div>
+                        <div class="col-md-7">
+                            <h6 class="fw-bold text-primary">HACKATHON | LANDING PAGE</h6>
+                            <p class="text-secondary" style="font-size: 0.95rem;">
+                                Colaboración en equipo para el diseño e implementación de una landing page de alto impacto. 
+                                Responsable del maquetado responsive y componentes interactivos (JS) utilizando Bootstrap 5, 
+                                asegurando un diseño limpio y optimizado sin dependencias de backend.                        
+                            </p>
+                            <a href="https://cnastienka.github.io/Calle-Libre/">Conoce a Calle Libre</a>
+                            <h6 class="fw-bold mt-3">Tecnologías usadas:</h6>
+                            <div class="mt-2">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light border-0">
+                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">DESARROLLADOR FULL STACK</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 mb-3 mb-md-0 text-center">
+                            <img src="../componentes/img/at&t.png" class="modal-project-img shadow-sm" alt="Detalle API">
+                        </div>
+                        <div class="col-md-7">
+                            <h6 class="fw-bold text-primary">BECARIO | AT&T COMUNICACIONES DIGITALES</h6>
+                            <p class="text-secondary" style="font-size: 0.95rem;">
+                                Analicé el flujo operativo del área e identifiqué oportunidades de mejora en el proceso de resguardo de documentos, proponiendo e implementando una solución de automatización 
+                                que optimiza la organización y localización de la información.
+                                Diseñé la estructura de datos en Oracle SQL, permitiendo la clasificación eficiente de documentos según su tipo y facilitando su trazabilidad dentro del sistema.
+                            </p>
+                            <h6 class="fw-bold mt-3">Tecnologías usadas:</h6>
+                            <div class="mt-2">
+                                <span class="tech-badge">SQL Oracle</span>
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light border-0">
+                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
      
   
 
@@ -163,9 +249,6 @@
             <div class="row copyright-bar text-center text-md-start">
                 <div class="col-md-6">
                     <p class="mb-0">© 2026 Cesar Enrique Manriquez Torres. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 text-md-end mt-2 mt-md-0 text-muted">
-                    Hecho con <i class="fa-solid fa-heart text-danger mx-1"></i> usando Bootstrap 5
                 </div>
             </div>
         </div>
