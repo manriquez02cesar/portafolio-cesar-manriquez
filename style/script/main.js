@@ -32,7 +32,7 @@ const translations = {
     "page-project": "My Projects",
     "page-aboutme": "About me",
     "page-contact": "Contact",
-    "index-pos": "Engineer Computer Systems",
+    "index-pos": "Computer Systems Engineer",
     "index-desc": "Junior Backend Developer with solid training in Java and specialization in relational database management.",
     "index-CV": "Download CV",
     "footer-desc": "Full Stack Developer passionate about creating exceptional digital experiences and clean code.",
