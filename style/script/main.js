@@ -118,9 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // --- 3. DETECCIÓN DE PÁGINA (FONDOS) ---
-    const isIndexPage = window.location.pathname === "/" || 
-                        window.location.pathname.endsWith("index.html");
-
+    const isIndexPage = window.location.pathname.endsWith("index.html") || 
+                        window.location.pathname.endsWith("/");
     if (isIndexPage) {
         // Fondo de Video (Solo para Index)
         const video = document.createElement("video");
