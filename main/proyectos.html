@@ -10,22 +10,36 @@
 </head>
 <body>
   <!-- BARRA DE NAVEGACIÓN -->
+    <!-- BARRA DE NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="../index.html">Cesar Manríquez</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuBlog">
-                <span class="navbar-toggler-icon"></span>
+    <div class="container d-flex align-items-center">
+        
+        <a class="navbar-brand fw-bold text-white me-auto" href="../index.html">Cesar Manríquez</a>
+        
+        <div class="d-flex gap-2 me-2 ms-lg-3 order-lg-last">
+            <button type="button" id="btn-es" class="card-color shadow-sm rounded-pill py-2 px-3" data-key="lenguage-spanish">
+                ES<span class="d-none d-md-inline">PAÑOL</span>
             </button>
-            <div class="collapse navbar-collapse" id="menuBlog">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mente.html">Mi mente</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="proyectos.html">Mis Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutme.html">Acerca de mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <button type="button" id="btn-en" class="card-color shadow-sm rounded-pill py-2 px-3" data-key="lenguage-english">
+                IN<span class="d-none d-md-inline">GLES</span>
+            </button>
         </div>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuBlog">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="menuBlog">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item"><a class="nav-link" href="../index.html" data-key="page-index">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="mente.html" data-key="page-mind">Mi Mente</a></li>
+                <li class="nav-item"><a class="nav-link active" href="proyectos.html" data-key="page-project">Mis Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutme.html" data-key="page-aboutme">Acerca de mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html" data-key="page-contact">Contacto</a></li>
+            </ul>
+        </div>
+
+    </div>
     </nav>
     <!-- CONTENIDO -->
     <main>
@@ -225,37 +239,37 @@
                     <div class="brand-text-footer mb-3">
                         CESAR<span class="brand-dot">.DEV</span>
                     </div>
-                    <p class="mb-3">Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales y código limpio.</p>
+                    <p class="mb-3" data-key="footer-desc">Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales y código limpio.</p>
                     <div class="status-container justify-content-center justify-content-md-start">
                         <span class="status-dot"></span>
-                        <span>Disponible para trabajar</span><!--Actualmente me encuentro laborando/Disponible para trabajar-->
+                        <span data-key="footer-status">Disponible para trabajar</span><!--Actualmente me encuentro laborando/Disponible para trabajar-->
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 ps-lg-5 text-center text-md-start">
-                    <h3 class="footer-title">Navegación</h3>
+                    <h3 class="footer-title" data-key="footer-nav">Navegación</h3>
                     <ul class="list-unstyled">
-                        <li><a href="../index.html" class="nav-link-custom">Inicio</a></li>
-                        <li><a href="mente.html" class="nav-link-custom">Mi mente</a></li>
-                        <li><a href="proyectos.html" class="nav-link-custom">Proyectos</a></li>
-                        <li><a href="aboutme.html" class="nav-link-custom">Acerca de mí</a></li>
-                        <li><a href="contacto.html" class="nav-link-custom">Contacto</a></li>
+                        <li><a href="../index.html" class="nav-link-custom" data-key="page-index">Inicio</a></li>
+                        <li><a href="mente.html" class="nav-link-custom" data-key="page-mind">Mi mente</a></li>
+                        <li><a href="proyectos.html" class="nav-link-custom" data-key="page-project">Proyectos</a></li>
+                        <li><a href="aboutme.html" class="nav-link-custom" data-key="page-aboutme">Acerca de mí</a></li>
+                        <li><a href="contacto.html" class="nav-link-custom" data-key="page-contact">Contacto</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-12 text-center text-md-start">
-                    <h3 class="footer-title">Conecta</h3>
+                    <h3 class="footer-title" data-key="footer-con">Conecta</h3>
                     <div class="d-flex mb-4 justify-content-center justify-content-md-start">
                         <a href="https://github.com/manriquez02cesar" class="social-link-footer" title="GitHub"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/cesar-man02/" class="social-link-footer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
-                    <p class="quote-text">"Un desarrollador no solo escribe código, traduce ideas en realidad"</p>
+                    <p class="quote-text" data-key="footer-frase">"Un desarrollador no solo escribe código, traduce ideas en realidad"</p>
                 </div>
             </div>
 
             <div class="row copyright-bar text-center text-md-start">
                 <div class="col-md-6">
-                    <p class="mb-0">© 2026 Cesar Enrique Manriquez Torres. Todos los derechos reservados.</p>
+                    <p class="mb-0" data-key="footer-cesar">© 2026 Cesar Enrique Manriquez Torres. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
