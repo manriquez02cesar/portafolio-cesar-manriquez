@@ -46,8 +46,8 @@
     <div class="container pb-3">
         <!-- FILA 1: Encabezado -->
             <div class="section-header text-center">
-                <h1 class="fw-bold display-4">Mis Proyectos</h1>
-                <p class="lead">Algunos de los desarrollos en los que he trabajado recientemente.</p>
+                <h1 class="fw-bold display-4" data-key="project-me">Mis Proyectos</h1>
+                <p class="lead" data-key="project-desc">Algunos de los desarrollos en los que he trabajado recientemente.</p>
             </div>
 
         <div class="row g-4 justify-content-center pt-4 pb-5">
@@ -59,11 +59,11 @@
                         <img src="../componentes/img/GF.png" alt="Proyecto Backend" class="project-img">
                     </div>
                     <div class="card-body text-center p-4">
-                        <h5 class="fw-bold">APLICACIÓN E-COMMERCE</h5>
-                        <p class="text-muted small mb-4">Desarrollo integral de una plataforma e-commerce con un ciclo de ejecución de 12 semanas. 
+                        <h5 class="fw-bold" data-key="proyect-ecom">APLICACIÓN E-COMMERCE</h5>
+                        <p class="text-muted small mb-4" data-key="ecom-desc">Desarrollo integral de una plataforma e-commerce con un ciclo de ejecución de 12 semanas. 
                             El proyecto abarca el diseño y la implementación full-stack incluyendo una experiencia de usuario (UX).
                         </p>
-                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto1" data-key="details">
                             Ver detalles <i class="bi bi-arrow-right ms-2"></i>
                         </button>
                     </div>
@@ -78,9 +78,9 @@
                         <img src="../componentes/img/Calle_Libre.jpeg" alt="Proyecto AT&T" class="project-img">
                     </div>
                     <div class="card-body text-center p-4">
-                        <h5 class="fw-bold">LANDING PAGE</h5>
-                        <p class="text-muted small mb-4">Diseñé y programé la interfaz de usuario de una aplicación web para app-store deportiva utilizando Bootstrap y JavaScript en solo 12 horas.</p>
-                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                        <h5 class="fw-bold" data-key="project-land">LANDING PAGE</h5>
+                        <p class="text-muted small mb-4" data-key="land-desc">Diseñé y programé la interfaz de usuario de una aplicación web para app-store deportiva utilizando Bootstrap y JavaScript en solo 12 horas.</p>
+                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto2" data-key="details">
                             Ver detalles <i class="bi bi-arrow-right ms-2"></i>
                         </button>
                     </div>
@@ -94,9 +94,9 @@
                         <img src="../componentes/img/att.png" alt="Proyecto Code" class="project-img">
                     </div>
                     <div class="card-body text-center p-4">
-                        <h5 class="fw-bold">AT&T COMUNICACIONES DIGITALES</h5>
-                        <p class="text-muted small mb-4"> Automatizacé el resguardo y gestioné documentos físicos y digitales. </p>
-                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                        <h5 class="fw-bold" data-key="project-att">AT&T COMUNICACIONES DIGITALES</h5>
+                        <p class="text-muted small mb-4" data-key="att-desc">Automatizacé el resguardo y gestioné documentos físicos y digitales.</p>
+                        <button class="btn card-color shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProyecto3" data-key="details">
                             Ver detalles <i class="bi bi-arrow-right ms-2"></i>
                         </button>
                     </div>
@@ -111,7 +111,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title fw-bold">DESARROLLADOR BACKEND Jr.</h5>
+                    <h5 class="modal-title fw-bold" data-key="project-dev">DESARROLLADOR BACKEND Jr.</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
@@ -120,15 +120,15 @@
                             <img src="../componentes/img/GridFlex.png" class="modal-project-img shadow-sm" alt="Detalle">
                         </div>
                         <div class="col-md-7">
-                            <h6 class="fw-bold text-primary">SITIO WEB | E-COMMERCE</h6>
-                            <p class="text-secondary" style="font-size: 0.95rem;">
+                            <h6 class="fw-bold text-primary" data-key="project-sitio">SITIO WEB | E-COMMERCE</h6>
+                            <p class="text-secondary" style="font-size: 0.95rem;" data-key="sitio-desc">
                                 Actualmente desarrollo una aplicación E-commerce enfocada en la venta de ropa, implementando una interfaz moderna y adaptable mediante HTML, CSS, JavaScript y Bootstrap, 
                                 garantizando una experiencia de usuario óptima en dispositivos móviles, tabletas y escritorio.
                                 Por parte del backend se contemplo usar el framework Spring utilizando las herramientas de Spring boot y Spring security
                                 donde se utilizo la arquitectura de MVC, esto permitio tener una mejor organización en clases y paquetes, donde se utilizo la API de 
                                 JPA con el framework Hibernate que nos permitio crear las entidades suficientes para pode rconectar la base de datos con la logica.
                             </p>
-                            <h6 class="fw-bold mt-3">Tecnologías usadas:</h6>
+                            <h6 class="fw-bold mt-3" data-key="project-tec">Tecnologías usadas:</h6>
                             <div class="mt-2">
                                 <span class="tech-badge">Java</span>
                                 <span class="tech-badge">Spring Boot</span>
@@ -143,9 +143,9 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-light border-0">
-                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal" data-key="project-close">Cerrar</button>
                     <a href="http://100.31.79.75:8080/index.html" type="button" class="btn card-color shadow-sm rounded-pill">www.gridflex.com</a>
-                    <a href="https://github.com/DanteSinencio/Grid-Flex-Clothing-Store" type="button" class="btn card-color shadow-sm rounded-pill">Conoce el codigo</a>
+                    <a href="https://github.com/DanteSinencio/Grid-Flex-Clothing-Store" type="button" class="btn card-color shadow-sm rounded-pill" data-key="project-code">Conoce el codigo</a>
                 </div>
             </div>
         </div>
@@ -156,7 +156,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title fw-bold">DESARROLLADOR FRONTEND</h5>
+                    <h5 class="modal-title fw-bold" data-key="project-front">DESARROLLADOR FRONTEND</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
@@ -165,13 +165,13 @@
                             <img src="../componentes/img/CalleLibre.png" class="modal-project-img" alt="Detalle AT&T">
                         </div>
                         <div class="col-md-7">
-                            <h6 class="fw-bold text-primary">HACKATHON | LANDING PAGE</h6>
-                            <p class="text-secondary" style="font-size: 0.95rem;">
+                            <h6 class="fw-bold text-primary" data-key="project-hack">HACKATHON | LANDING PAGE</h6>
+                            <p class="text-secondary" style="font-size: 0.95rem;" data-key="hack-desc">
                                 Colaboración en equipo para el diseño e implementación de una landing page de alto impacto. 
                                 Responsable del maquetado responsive y componentes interactivos (JS) utilizando Bootstrap 5, 
                                 asegurando un diseño limpio y optimizado sin dependencias de backend.                        
                             </p>
-                            <h6 class="fw-bold mt-3">Tecnologías usadas:</h6>
+                            <h6 class="fw-bold mt-3" data-key="project-tec">Tecnologías usadas:</h6>
                             <div class="mt-2">
                                 <span class="tech-badge">HTML</span>
                                 <span class="tech-badge">Bootstrap</span>
@@ -182,9 +182,9 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-light border-0">
-                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal" data-key="project-close">Cerrar</button>
                     <a href="https://cnastienka.github.io/Calle-Libre/" type="button" class="btn card-color shadow-sm rounded-pill">www.callelibre.com</a>
-                    <a href="https://github.com/cnastienka/Calle-Libre" type="button" class="btn card-color shadow-sm rounded-pill">Conoce el codigo</a>
+                    <a href="https://github.com/cnastienka/Calle-Libre" type="button" class="btn card-color shadow-sm rounded-pill" data-key="project-code">Conoce el codigo</a>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title fw-bold">DESARROLLADOR FULL STACK</h5>
+                    <h5 class="modal-title fw-bold" data-key="project-fullstack">DESARROLLADOR FULL STACK</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
@@ -204,13 +204,13 @@
                             <img src="../componentes/img/at&t.png" class="modal-project-img shadow-sm" alt="Detalle API">
                         </div>
                         <div class="col-md-7">
-                            <h6 class="fw-bold text-primary">BECARIO | AT&T COMUNICACIONES DIGITALES</h6>
-                            <p class="text-secondary" style="font-size: 0.95rem;">
+                            <h6 class="fw-bold text-primary" data-key="project-bec">BECARIO | AT&T COMUNICACIONES DIGITALES</h6>
+                            <p class="text-secondary" style="font-size: 0.95rem;" data-key="bec-desc">
                                 Analicé el flujo operativo del área e identifiqué oportunidades de mejora en el proceso de resguardo de documentos, proponiendo e implementando una solución de automatización 
                                 que optimiza la organización y localización de la información.
                                 Diseñé la estructura de datos en Oracle SQL, permitiendo la clasificación eficiente de documentos según su tipo y facilitando su trazabilidad dentro del sistema.
                             </p>
-                            <h6 class="fw-bold mt-3">Tecnologías usadas:</h6>
+                            <h6 class="fw-bold mt-3" data-key="project-tec">Tecnologías usadas:</h6>
                             <div class="mt-2">
                                 <span class="tech-badge">SQL Oracle</span>
                                 <span class="tech-badge">Java</span>
@@ -222,7 +222,7 @@
                     </div>
                 </div>
                 <div class="modal-footer bg-light border-0">
-                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn card-color shadow-sm rounded-pill" data-bs-dismiss="modal" data-key="project-close">Cerrar</button>
                 </div>
             </div>
         </div>

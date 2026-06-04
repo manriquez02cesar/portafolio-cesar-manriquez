@@ -1,375 +1,465 @@
-/* Configuración para Footer Pegajoso */
-        html, body {
-            height: 100%;
-        }
+/* ==========================================================================
+   1. ESTILOS GLOBALES (Compartidos por todos los HTML)
+   ========================================================================== */
+html, body {
+    height: 100%;
+}
 
-        body {
-            display: flex;
-            flex-direction: column;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f8fafc;
-        }
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8fafc;
+}
 
-        /* Video Background Style */
-        .video-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center top;
-            z-index: -1;
-        }
+/* Video Background Style */
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: -1;
+}
 
-        /* NAVBAR ANIMATION (Líneas al pasar el cursor) */
-        .navbar-custom {
-            background-color: #0f172a;
-            border-bottom: 1px solid #1e293b;
-        }
+/* NAVBAR ANIMATION */
+.navbar-custom {
+    background-color: #0f172a;
+    border-bottom: 1px solid #1e293b;
+}
 
-        .navbar-nav .nav-link {
-            position: relative;
-            padding-bottom: 5px;
-            margin: 0 5px;
-            transition: color 0.3s ease;
-            color: #94a3b8;
-        }
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+    color: #94a3b8;
+}
 
-        .navbar-nav .nav-link:hover,
-        .navbar-nav .nav-link.active {
-            color: #ffffff;
-        }
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffffff;
+}
 
-        .navbar-nav .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            display: block;
-            margin-top: 2px;
-            right: 0;
-            background: #ffffff;
-            transition: width 0.3s ease;
-        }
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
 
-        .navbar-nav .nav-link:hover::after,
-        .navbar-nav .nav-link.active::after {
-            width: 100%;
-            left: 0;
-        }
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+    left: 0;
+}
 
-        /* CONTENIDO PRINCIPAL */
-        main {
-            flex: 1 0 auto;
-            display: flex;
-            align-items: center; 
-            padding: 40px 0;
-        }
+/* ESTRUCTURA BASE DE MAIN */
+main {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center; 
+    padding: 40px 0;
+}
 
-        /* Personalización de la Tarjeta */
-        .card-custom {
-            border: none;
-            background-color: #ffffffe4;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border-top: 5px solid #0d6efd;/*0d6efd*/
-        }
-        .card-color{
-            background-color: #0f172a;
-            color: white;
-            border-radius: 8px;
-            padding: 8px 20px;
-            border: none;
-            transition: background 0.3s;
-        }
+/* --- ESTILOS DEL FOOTER --- */
+.main-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    flex-shrink: 0;
+}
 
-        .card-custom:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
+.footer-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
 
-        /* --- ESTILOS DEL FOOTER --- */
-        .main-footer {
-            background-color: #0f172a;
-            color: #94a3b8;
-            padding-top: 4rem;
-            padding-bottom: 2rem;
-            flex-shrink: 0;
-        }
+.brand-text-footer {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
 
-        .footer-title {
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
-        }
+.brand-dot { color: #0ea5e9; }
 
-        .brand-text-footer {
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-        }
+.nav-link-custom {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
 
-        .brand-dot { color: #0ea5e9; }
+.nav-link-custom:hover { color: #0ea5e9; }
 
-        .nav-link-custom {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            display: inline-block;
-            margin-bottom: 0.5rem;
-        }
+.status-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
 
-        .nav-link-custom:hover { color: #0ea5e9; }
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: 0 0 8px #22c55e;
+}
 
-        .status-container {
-            display: flex;
-            align-items: center;
-            font-size: 0.875rem;
-            margin-top: 1rem;
-        }
+.status-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22c55e;
+    border-radius: 50%;
+    animation: pulse-animation 1s infinite;
+}
 
-        .status-dot {
-            width: 10px;
-            height: 10px;
-            background-color: #22c55e;/*green: 22c55e/ red: cb1616*/
-            border-radius: 50%;
-            margin-right: 10px;
-            position: relative;
-            box-shadow: 0 0 8px #22c55e;/*green: 22c55e/ red: cb1616*/
-        }
+@keyframes pulse-animation {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(2.5); opacity: 0; }
+}
 
-        .status-dot::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: #22c55e;/*green: 22c55e/ red: cb1616*/
-            border-radius: 50%;
-            animation: pulse-animation 1s infinite;
-        }
+.social-link-footer {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
 
-        @keyframes pulse-animation {
-            0% { transform: scale(1); opacity: 0.8; }
-            100% { transform: scale(2.5); opacity: 0; }
-        }
+.social-link-footer:hover {
+    color: #0ea5e9;
+    transform: translateY(-3px);
+}
 
-        .social-link-footer {
-            color: #94a3b8;
-            font-size: 1.5rem;
-            margin-right: 1.2rem;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
+.quote-text {
+    font-style: italic;
+    font-size: 0.875rem;
+    border-left: 2px solid #6c7f99;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
 
-        .social-link-footer:hover {
-            color: #0ea5e9;
-            transform: translateY(-3px);
-        }
+.copyright-bar {
+    border-top: 1px solid #1e293b;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+}
 
-        .quote-text {
-            font-style: italic;
-            font-size: 0.875rem;
-            border-left: 2px solid #6c7f99;
-            padding-left: 1rem;
-            margin-top: 1rem;
-        }
+/* Elementos comunes de UI */
+.card-color {
+    background-color: #0f172a;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+    border: none;
+    transition: background 0.3s;
+}
 
-        .copyright-bar {
-            border-top: 1px solid #1e293b;
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            font-size: 0.75rem;
-        }
-        /* ESTILO DE CARDS */
-        .card-custom {
-            border: none;
-            background-color: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            height: 100%;
-            border-top: 5px solid #0ea5e9;
-        }
+/* ==========================================================================
+   2. ESTILOS DE OTRAS VISTAS (Index, Proyectos, Mente, AboutMe)
+   ========================================================================== */
+.card-custom {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: 100%;
+    border-top: 5px solid #0ea5e9;
+}
 
-        .card-custom:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        }
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
 
-        /* Barras de Progreso */
-        .progress {
-            height: 8px;
-            border-radius: 10px;
-            background-color: #e2e8f0;
-            margin-bottom: 1.5rem;
-        }
+.progress {
+    height: 8px;
+    border-radius: 10px;
+    background-color: #e2e8f0;
+    margin-bottom: 1.5rem;
+}
 
-        .skill-icon {
-            font-size: 1.5rem;
-            color: #0ea5e9;
-            margin-right: 15px;
-        }
-        /* PROYECTOS */
-        /* Estilos de la Card Principal */
-        .project-card {
-            border: none;
-            border-radius: 15px;
-            background: white;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            overflow: hidden;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
+.skill-icon {
+    font-size: 1.5rem;
+    color: #0ea5e9;
+    margin-right: 15px;
+}
 
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 35px rgba(0,0,0,0.12);
-        }
+.project-card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-        .img-wrapper {
-            width: 100%;
-            height: 160px;
-            overflow: hidden;
-            position: relative;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.12);
+}
 
-        .project-img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            transition: transform 0.5s ease;
-        }
+.img-wrapper {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .project-card:hover .project-img {
-            transform: scale(1.05);
-        }
+.project-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
 
-        /* Estilos del Modal */
-        .modal-content {
-            border-radius: 20px;
-            border: none;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
 
-        .modal-header {
-            border-bottom: 1px solid #f1f5f9;
-            background-color: #fafafa;
-            border-radius: 20px 20px 0 0;
-        }
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
 
-        .modal-project-img {
-            max-height: 200px; 
-            max-width: 100%; 
-            height: auto;
-            width: auto;
-            object-fit: contain;
-            background-color: transparent;
-            border-radius: 12px;
-            display: block;
-            margin: 0 auto;
-        }
+.modal-header {
+    border-bottom: 1px solid #f1f5f9;
+    background-color: #fafafa;
+    border-radius: 20px 20px 0 0;
+}
 
-        .tech-badge {
-            background-color: #e0f2fe;
-            color: #0369a1;
-            padding: 5px 12px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            display: inline-block;
-        }
+.modal-project-img {
+    max-height: 200px; 
+    max-width: 100%; 
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
 
-        .project-features li {
-            margin-bottom: 8px;
-            list-style: none;
-            position: relative;
-            padding-left: 25px;
-        }
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 15px;
+    margin: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    color: #0f172a; /* Color del texto original */
+}
 
-        .project-features li::before {
-            content: "\f26a";
-            font-family: "bootstrap-icons";
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-        }
-        /*ESTILOS PARA ABOUTME*/
-        .profile-card {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            padding: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            border-top: 6px solid #0ea5e9;
-        }
-        .profile-img-container {
-            position: relative;
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 30px;
-        }
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid white;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        .tech-badge {
-            display: inline-flex;
-            align-items: center;
-            background: white;
-            padding: 10px 18px;
-            border-radius: 15px;
-            margin: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-        }
-        .tech-badge:hover {
-            transform: translateY(-5px);
-            border-color: #0ea5e9;
-            color: #0ea5e9;
-        }
-        .tech-badge i {
-            font-size: 1.4rem;
-            margin-right: 10px;
-        }
-        .university-box {
-            background: #f1f5f9;
-            border-radius: 20px;
-            padding: 25px;
-            margin-top: 25px;
-            border-left: 5px solid #0ea5e9;
-        }
-        .section-title {
-            font-weight: 700;
-            color: #0f172a;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 40%;
-            height: 3px;
-            background: #0ea5e9;
-        }
+/* Efecto dinámico al pasar el cursor (Segunda Imagen) */
+.tech-badge:hover {
+    transform: translateY(-5px);
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+    box-shadow: 0 10px 20px rgba(14, 165, 233, 0.15);
+}
+
+.tech-badge i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+
+/* 2. Insignias Exclusivas para los Modales de Proyectos */
+.modal-tech-badge {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.project-features li {
+    margin-bottom: 8px;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+.project-features li::before {
+    content: "\f26a";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border-top: 6px solid #0ea5e9;
+}
+
+.profile-img-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 30px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.university-box {
+    background: #f1f5f9;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 25px;
+    border-left: 5px solid #0ea5e9;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40%;
+    height: 3px;
+    background: #0ea5e9;
+}
+
+
+/* ==========================================================================
+   3. ESTILOS EXCLUSIVOS PARA LA PÁGINA DE CONTACTO (Blindados)
+   ========================================================================== */
+/* Forzamos a que el contenedor principal de contacto alinee todo verticalmente de arriba a abajo */
+main.contact-page {
+    padding: 60px 0;
+    display: block; /* Cambiado de flex a block para evitar que el formulario se vaya a la derecha */
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Tarjetas de contacto limpias de herencias molestas */
+.card-contact {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-top: 4px solid #0ea5e9;
+    height: auto; /* Evita que se estiren verticalmente de forma extraña */
+    width: 100%;
+}
+
+.card-contact:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    color: #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del Formulario */
+.form-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: none;
+}
+
+.invalid-feedback {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #0f172a 0%, #0f172a 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-weight: 700;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-submit:not(:disabled):hover {
+    transform: scale(1.02);
+    color: white;
+}

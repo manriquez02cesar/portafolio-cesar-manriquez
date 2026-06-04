@@ -45,13 +45,47 @@ const translations = {
     "contact-mail": "Contáctame ahora",
     "contact-forms": "Enviar un mensaje",
     "contact-name": "Nombre",
+    "placeholder-name": "Escribe tu nombre completo",
     "name-place": "El nombre no puede contener números.",
+    "placeholder-email": "Correo electrónico",
     "contact-email": "Ingresa un correo electrónico válido.",
     "forms-message": "Mensaje",
     "message-desc": "El mensaje debe tener al menos 3 palabras.",
-    "forms-boton": "ENVIAR AHORA"
+    "placeholder-message": "¿En qué te puedo ayudar?",
+    "forms-boton": "ENVIAR AHORA",
+    // Texto about me
+    "aboutme": "Sobre mí",
+    "about-desc": "Desarrollador Backend Jr.",
+    "about-education": '<i class="bi bi-mortarboard-fill me-2"></i>Educación',
+    "about-ing": "Ingeniería en Sistemas Computacionales",
+    "about-pres": "¡Hola! soy Desarrollador Jr. Backend con sólida formación en Java y especialización en la gestión de bases de datos relacionales como SQL Oracle. Me distingo por un enfoque analítico orientado a la resolución de desafíos lógicos y una alta capacidad de persistencia para garantizar la entrega de soluciones óptimas. Comprometido con la calidad del código y la eficiencia técnica en cada proyecto.",
+    "about-tec": "Tecnologías y Herramientas",
+    "about-speak": "¿Hablamos?",
+    //Texto project
+    "project-me": "Mis Proyectos",
+    "project-desc": "Algunos de los desarrollos en los que he trabajado recientemente.",
+    "project-ecom": "APLICACIÓN E-COMMERCE",
+    "ecom-desc": "Desarrollo integral de una plataforma e-commerce con un ciclo de ejecución de 12 semanas. El proyecto abarca el diseño y la implementación full-stack incluyendo una experiencia de usuario (UX).",
+    "details": "Ver detalles",
+    "project-land": "LANDING PAGE",
+    "land-desc": "Diseñé y programé la interfaz de usuario de una aplicación web para app-store deportiva utilizando Bootstrap y JavaScript en solo 12 horas.",
+    "project-att": "AT&T COMUNICACIONES DIGITALES",
+    "att-desc": "Automatizacé el resguardo y gestioné documentos físicos y digitales.",
+    "project-dev": "DESARROLLADOR BACKEND Jr.",
+    "project-sitio": "SITIO WEB | E-COMMERCE",
+    "sitio-desc": "Actualmente desarrollo una aplicación E-commerce enfocada en la venta de ropa, implementando una interfaz moderna y adaptable mediante HTML, CSS, JavaScript y Bootstrap, garantizando una experiencia de usuario óptima en dispositivos móviles, tabletas y escritorio. Por parte del backend se contemplo usar el framework Spring utilizando las herramientas de Spring boot y Spring security donde se utilizo la arquitectura de MVC, esto permitio tener una mejor organización en clases y paquetes, donde se utilizo la API de JPA con el framework Hibernate que nos permitio crear las entidades suficientes para pode rconectar la base de datos con la logica.",
+    "project-tec": "Tecnologías usadas:",
+    "project-close": "Cerrar",
+    "project-code": "Conoce el codigo",
+    "project-front": "DESARROLLADOR FRONTEND",
+    "project-hack": "HACKATHON | LANDING PAGE",
+    "hack-desc": "Colaboración en equipo para el diseño e implementación de una landing page de alto impacto. Responsable del maquetado responsive y componentes interactivos (JS) utilizando Bootstrap 5, asegurando un diseño limpio y optimizado sin dependencias de backend.",
+    "project-fullstack": "DESARROLLADOR FULL STACK",
+    "project-bec": "BECARIO | AT&T COMUNICACIONES DIGITALES",
+    "bec-desc": "Analicé el flujo operativo del área e identifiqué oportunidades de mejora en el proceso de resguardo de documentos, proponiendo e implementando una solución de automatización que optimiza la organización y localización de la información. Diseñé la estructura de datos en Oracle SQL, permitiendo la clasificación eficiente de documentos según su tipo y facilitando su trazabilidad dentro del sistema."
 
-    // Textos de tus otras páginas (agrega las que necesites)
+
+
   },
   en: {
     // Textos del Index
@@ -97,15 +131,45 @@ const translations = {
     "contact-mail": "Contact me now",
     "contact-forms": "Send a message",
     "contact-name": "Name",
+    "placeholder-name": "Type your full name",
     "name-place": "The name cannot contain numbers.",
+    "placeholder-email": "Email address",
     "contact-email": "Enter a valid email address.",
     "forms-message": "Message",
     "message-desc": "The message must have at least 3 words.",
-    "forms-boton": "SEND NOW"
+    "placeholder-message": "How can I help you?",
+    "forms-boton": "SEND NOW",
+    // Texto about me
+    "aboutme": "About me",
+    "about-desc": "Jr Backend Developer.",
+    "about-education": '<i class="bi bi-mortarboard-fill me-2"></i>Education',
+    "about-ing": "Computer Systems Engineering",
+    "about-pres": "Hello! I am a Jr. Backend Developer with a solid background in Java and specialization in managing relational databases such as SQL Oracle. I distinguish myself by an analytical approach aimed at solving logical challenges and a high capacity for persistence to guarantee the delivery of optimal solutions. Committed to code quality and technical efficiency in each project.",
+    "about-tec": "Technologies and software tools",
+    "about-speak": "Talk later?",
+    // Texto project
+    "project-me": "My Projects",
+    "project-desc": "Some of the developments I've worked on recently.",
+    "project-ecom": "E-COMMERCE APP",
+    "ecom-desc": "Comprehensive development of an e-commerce platform with a 12-week execution cycle. The project encompasses full-stack design and implementation including a user experience (UX).",
+    "details": "See details",
+    "project-land": "LANDING PAGE",
+    "land-desc": "I designed and programmed the user interface of a web application for a sports app-store using Bootstrap and JavaScript in just 12 hours.",
+    "project-att": "AT&T DIGITAL COMMUNICATIONS",
+    "att-desc": "I automated the receipt and managed physical and digital documents.",
+    "project-dev": "BACKEND DEVELOPER Jr.",
+    "project-sitio": "WEBSITE | E-COMMERCE",
+    "sitio-desc": "I am currently developing an E-commerce application focused on selling clothing, implementing a modern and adaptable interface using HTML, CSS, JavaScript and Bootstrap, guaranteeing an optimal user experience on mobile, tablet and desktop devices. On the backend side, we contemplated using the Spring framework using the Spring boot and Spring security tools where the MVC architecture was used, this allowed us to have a better organization in classes and packages, where the JPA API was used with the Hibernate framework that allowed us to create enough entities to be able to reconnect the database with the logic.",
+    "project-tec": "Technologies used:",
+    "project-close": "Close",
+    "project-code": "Know the code",
+    "project-front": "FRONTEND DEVELOPER",
+    "project-hack": "HACKATHON | LANDING PAGE",
+    "hack-desc": "Team collaboration for the design and implementation of a high-impact landing page. Responsible for responsive layout and interactive components (JS) using Bootstrap 5, ensuring a clean and optimized design without backend dependencies.",
+    "project-fullstack": "DESARROLLADOR FULL STACK",
+    "project-bec": "INTERNSHIP | AT&T DIGITAL COMMUNICATIONS",
+    "bec-desc": "I analyzed the operational flow of the area and identified opportunities for improvement in the document safeguarding process, proposing and implementing an automation solution that optimizes the organization and location of information. I designed the data structure in Oracle SQL, allowing the efficient classification of documents according to their type and facilitating their traceability within the system."
 
-    
-    // Textos de tus otras páginas
-    
   }
 };
 
@@ -122,6 +186,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Manejo especial por si quieres traducir el título de la pestaña (<title>)
                 if (element.tagName === 'TITLE') {
                     document.title = translations[lang][key];
+                } else if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.setAttribute('placeholder', translations[lang][key]);
                 } else {
                     element.innerHTML = translations[lang][key];
                 }
