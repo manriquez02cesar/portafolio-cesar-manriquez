@@ -18,8 +18,38 @@ const translations = {
     "footer-nav": "Navegación",
     "footer-con": "Conecta",
     "footer-frase": "Un desarrollador no solo escribe código, traduce ideas en realidad",
-    "footer-cesar": "© 2026 Cesar Enrique Manriquez Torres. Todos los derechos reservados."
+    "footer-cesar": "© 2026 Cesar Enrique Manriquez Torres. Todos los derechos reservados.",
+    // Textos de Mi mente
+    "mind-tittle": "Mi mente",
+    "mind-sub": "Un vistazo a mis capacidades, valores y la lógica detrás de mi código.",
+    "mind-hard": '<i class="bi bi-code-slash me-2 text-primary"></i>Habilidades Técnicas',
+    "mind-db": "Bases de Datos (SQL)",
+    "mind-enfoque": '<strong>Enfoque:</strong> Compromiso con entrega de soluciones optimas y persistente ante desafíos lógicos.',
+    "mind-soft": '<i class="bi bi-people me-2 text-primary"></i>Habilidades Blandas',
+    "mind-pro": "Proactividad",
+    "pro-desc": "Iniciativa propia para anticipar necesidades y proponer soluciones innovadoras.",
+    "mind-attention": "Atención al detalle",
+    "attention-desc": "Enfoque meticuloso para asegurar la calidad y precisión en cada línea de código.",
+    "mind-per": "Persistente",
+    "per-desc": "Determinación constante para superar obstáculos técnicos y lograr objetivos complejos.",
+    "mind-workteam": "Trabajo en equipo",
+    "workteam-desc": "Sinergia colaborativa para alcanzar metas comunes compartiendo conocimientos.",
+    "mind-filosofia": "Mi Filosofía de Desarrollo",
+    "filosofia-desc": 'Creo firmemente que antes de la entrega de un proyecto es entender el <strong>flujo del negocio</strong>, una vez entiendes la idea del negocio puedes encontrar las soluciones satisfactoriamente.',
     // Textos de Contacto
+    "contact-tittle": "¡Hablemos!",
+    "contact-sub": "Elige el canal que prefieras o envíame un mensaje directo.",
+    "contact-send": "Envíame un mensaje.",
+    "contact-red": "Red Profesional",
+    "contact-git": "Conocé mis codigos",
+    "contact-mail": "Contáctame ahora",
+    "contact-forms": "Enviar un mensaje",
+    "contact-name": "Nombre",
+    "name-place": "El nombre no puede contener números.",
+    "contact-email": "Ingresa un correo electrónico válido.",
+    "forms-message": "Mensaje",
+    "message-desc": "El mensaje debe tener al menos 3 palabras.",
+    "forms-boton": "ENVIAR AHORA"
 
     // Textos de tus otras páginas (agrega las que necesites)
   },
@@ -40,8 +70,39 @@ const translations = {
     "footer-nav": "Navegation",
     "footer-con": "Connect",
     "footer-frase": "A developer doesn't just write code, they translate ideas into reality.",
-    "footer-cesar": "© 2026 Cesar Enrique Manriquez Torres. All rights reserved."
+    "footer-cesar": "© 2026 Cesar Enrique Manriquez Torres. All rights reserved.",
+    // Textos de Mi mente
+    "mind-tittle": "My mind",
+    "mind-sub": "A look at my capabilities, values, and the logic behind my code.",
+    "mind-hard": '<i class="bi bi-code-slash me-2 text-primary"></i>Hard skills',
+    "mind-db": "Database (SQL)",
+    "mind-enfoque": '<strong>Focusing:</strong> Commitment to delivering optimal solutions and persistence in the face of logical challenges.',
+    "mind-soft": '<i class="bi bi-people me-2 text-primary"></i>Soft kills',
+    "mind-pro": "Proactivity",
+    "pro-desc": "Self-initiative to anticipate needs and propose innovative solutions.",
+    "mind-attention": "Attention to detail",
+    "attention-desc": "Meticulous approach to ensuring quality and accuracy in every line of code.",
+    "mind-per": "Persistent",
+    "per-desc": "Constant determination to overcome technical obstacles and achieve complex goals.",
+    "mind-workteam": "Teamwork",
+    "workteam-desc": "Collaborative synergy to achieve common goals by sharing knowledge.",
+    "mind-filosofia": "My Development Philosophy",
+    "filosofia-desc": 'I firmly believe that before delivering a project, it is essential to understand the <strong>business flow</strong>, once you understand the business idea, you can find satisfactory solutions.',
     // Textos de Contacto
+    "contact-tittle": "Let's talk!",
+    "contact-sub": "Choose your preferred channel or send me a direct message.",
+    "contact-send": "Send me a message.",
+    "contact-red": "Professional Network",
+    "contact-git": "Get to know my codess",
+    "contact-mail": "Contact me now",
+    "contact-forms": "Send a message",
+    "contact-name": "Name",
+    "name-place": "The name cannot contain numbers.",
+    "contact-email": "Enter a valid email address.",
+    "forms-message": "Message",
+    "message-desc": "The message must have at least 3 words.",
+    "forms-boton": "SEND NOW"
+
     
     // Textos de tus otras páginas
     

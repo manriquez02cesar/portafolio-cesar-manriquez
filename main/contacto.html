@@ -48,8 +48,8 @@
     <!-- CONTENIDO -->
     <main class="container pb-3">
         <div class="text-center mb-5">
-            <h1 class="display-4 fw-bold text-dark">¡Hablemos!</h1>
-            <p class="text-muted">Elige el canal que prefieras o envíame un mensaje directo.</p>
+            <h1 class="display-4 fw-bold text-dark" data-key="contact-tittle">¡Hablemos!</h1>
+            <p class="text-muted" data-key="contact-sub">Elige el canal que prefieras o envíame un mensaje directo.</p>
         </div>
 
         <!-- Sección de Tarjetas Responsiva -->
@@ -59,7 +59,7 @@
                     <div class="card-contact text-center">
                         <i class="bi bi-whatsapp info-icon"></i>
                         <h6 class="fw-bold mb-0">WhatsApp</h6>
-                        <p class="mb-1 d-none d-sm-block">Envíame un mensaje.</p>
+                        <p class="mb-1 d-none d-sm-block" data-key="contact-send">Envíame un mensaje.</p>
                     </div>
                 </a>
             </div>
@@ -68,7 +68,7 @@
                     <div class="card-contact text-center">
                         <i class="bi bi-linkedin info-icon"></i>
                         <h6 class="fw-bold mb-0">LinkedIn</h6>
-                        <p class="mb-1 d-none d-sm-block">Red Profesional</p>
+                        <p class="mb-1 d-none d-sm-block" data-key="contact-red">Red Profesional</p>
                     </div>
                 </a>
             </div>
@@ -77,7 +77,7 @@
                     <div class="card-contact text-center">
                         <i class="bi bi-github info-icon"></i>
                         <h6 class="fw-bold mb-0">GitHub</h6>
-                        <p class="mb-1 d-none d-sm-block">Conocé mis codigos</p>
+                        <p class="mb-1 d-none d-sm-block" data-key="contact-git">Conocé mis codigos</p>
                     </div>
                 </a>
             </div>
@@ -88,7 +88,7 @@
                     <div class="card-contact text-center">
                         <i class="bi bi-envelope-at info-icon"></i>
                         <h6 class="fw-bold mb-0">Email</h6>
-                        <p class="mb-1 d-none d-sm-block">Contáctame ahora</p>
+                        <p class="mb-1 d-none d-sm-block" data-key="contact-mail">Contáctame ahora</p>
                     </div>
                 </a>
             </div>
@@ -97,26 +97,26 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="form-card">
-                    <h3 class="fw-bold mb-4 text-center text-md-start">Enviar un mensaje</h3>
+                    <h3 class="fw-bold mb-4 text-center text-md-start" data-key="contact-forms">Enviar un mensaje</h3>
                     <form id="contactForm" action="https://formspree.io/f/xeevqbev" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label text-muted small fw-bold">Nombre</label>
+                                <label class="form-label text-muted small fw-bold" data-key="contact-name">Nombre</label>
                                 <input type="text" id="name" name="name" class="form-control" placeholder="Juan Pérez" required>
-                                <div class="invalid-feedback">El nombre no puede contener números.</div>
+                                <div class="invalid-feedback" data-key="name-place">El nombre no puede contener números.</div>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label text-muted small fw-bold">Email</label>
                                 <input type="email" id="email" name="_replyto" class="form-control" placeholder="juan@ejemplo.com" required>
-                                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                                <div class="invalid-feedback" data-key="contact-email">Ingresa un correo electrónico válido.</div>
                             </div>
                             <div class="col-12">
-                                <label class="form-label text-muted small fw-bold">Mensaje</label>
+                                <label class="form-label text-muted small fw-bold" data-key="forms-message">Mensaje</label>
                                 <textarea id="message" name="message" class="form-control" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
-                                <div class="invalid-feedback">El mensaje debe tener al menos 3 palabras.</div>
+                                <div class="invalid-feedback" data-key="message-desc">El mensaje debe tener al menos 3 palabras.</div>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" id="submitBtn" class="btn btn-submit w-100 shadow-sm" disabled>
+                                <button type="submit" id="submitBtn" class="btn btn-submit w-100 shadow-sm" disabled data-key="forms-boton">
                                     ENVIAR AHORA <i class="bi bi-send ms-2"></i>
                                 </button>
                             </div>
