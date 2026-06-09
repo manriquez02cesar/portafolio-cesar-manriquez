@@ -114,13 +114,13 @@ main {
 .status-dot {
     width: 10px;
     height: 10px;
-    background-color: #22c55e;
+    background-color: #c00000;/*#22c55e // #c00000*/
     border-radius: 50%;
     margin-right: 10px;
     position: relative;
-    box-shadow: 0 0 8px #22c55e;
+    box-shadow: 0 0 8px #c00000;/*#22c55e // #c00000*/
 }
-
+/*
 .status-dot::after {
     content: '';
     position: absolute;
@@ -130,6 +130,9 @@ main {
     border-radius: 50%;
     animation: pulse-animation 1s infinite;
 }
+    */
+
+
 
 @keyframes pulse-animation {
     0% { transform: scale(1); opacity: 0.8; }

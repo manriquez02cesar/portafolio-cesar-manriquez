@@ -14,7 +14,7 @@ const translations = {
     "index-desc": "Desarrollador Jr. Backend con sólida formación en Java y especialización en la gestión de bases de datos relacionales.",
     "index-CV": "Descargar CV",
     "footer-desc": "Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales y código limpio.",
-    "footer-status": "Disponible para trabajar", //Actualmente me encuentro laborando / Disponible para trabajar
+    "footer-status": "Actualmente me encuentro laborando", //Actualmente me encuentro laborando / Disponible para trabajar
     "footer-nav": "Navegación",
     "footer-con": "Conecta",
     "footer-frase": "Un desarrollador no solo escribe código, traduce ideas en realidad",
@@ -100,7 +100,7 @@ const translations = {
     "index-desc": "Junior Backend Developer with solid training in Java and specialization in relational database management.",
     "index-CV": "Download CV",
     "footer-desc": "Full Stack Developer passionate about creating exceptional digital experiences and clean code.",
-    "footer-status": "Available to work", //I am currently employed / Available to work
+    "footer-status": "I am currently employed", //I am currently employed / Available to work
     "footer-nav": "Navegation",
     "footer-con": "Connect",
     "footer-frase": "A developer doesn't just write code, they translate ideas into reality.",
